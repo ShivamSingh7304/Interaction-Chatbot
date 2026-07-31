@@ -1,0 +1,135 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ==========================
+# Virtual Environments
+# ==========================
+venv/
+.venv/
+env/
+ENV/
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.*
+*.env
+
+# ==========================
+# Jupyter Notebook
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# Model Files
+# ==========================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+*.tflite
+*.h5
+*.keras
+*.joblib
+*.pkl
+*.pickle
+*.bin
+*.safetensors
+
+# ==========================
+# Datasets
+# ==========================
+data/
+datasets/
+dataset/
+raw_data/
+processed_data/
+downloads/
+
+# Large data files
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.jsonl
+*.zip
+*.tar
+*.tar.gz
+*.gz
+
+# ==========================
+# Hugging Face
+# ==========================
+.cache/
+huggingface/
+hf_cache/
+
+# ==========================
+# MLflow / Weights & Biases
+# ==========================
+mlruns/
+wandb/
+
+# ==========================
+# TensorBoard
+# ==========================
+runs/
+logs/
+events.out.tfevents.*
+
+# ==========================
+# Experiment Outputs
+# ==========================
+outputs/
+results/
+checkpoints/
+models/
+artifacts/
+
+# ==========================
+# Testing
+# ==========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================
+# Type Checking
+# ==========================
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# ==========================
+# IDE
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Misc
+# ==========================
+*.log
+*.tmp
+*.bak
