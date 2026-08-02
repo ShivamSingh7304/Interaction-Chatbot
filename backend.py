@@ -35,4 +35,4 @@ memory = InMemorySaver()
 
 workflow = graph.compile(checkpointer=memory)
 
-config1 = {"configurable": {"thread_id": "1"}}
+
