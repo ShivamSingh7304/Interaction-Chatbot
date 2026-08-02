@@ -1,7 +1,7 @@
 import streamlit as st
 from langchain_core.messages import HumanMessage, AIMessage
 
-from backend import workflow
+from backend import workflow , retrieve_all_threads
 st.set_page_config(page_title="Human Interaction Chatbot")
 
 st.title("Human Interaction Chatbot")
@@ -26,6 +26,7 @@ def add_threadid(thread_id):
 
 def load_conversation(thread_id):
      return workflow.get_state(config={"configurable":{"thread_id":thread_id}}).values['messages']
+    
 #******************************************************************************
 
 
@@ -38,7 +39,7 @@ if 'thread_id' not in st.session_state:
      st.session_state["thread_id"]=generate_threadId()
 
 if "chat_threads" not in st.session_state:
-     st.session_state["chat_threads"]=[]
+     st.session_state["chat_threads"]=retrieve_all_threads()
 
 add_threadid(st.session_state["thread_id"])
 
