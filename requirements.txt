@@ -3,3 +3,7 @@ langchain
 dotenv
 langchain_groq
 langgraph-checkpoint-sqlite 
+duckduckgo-search
+ddgs
+langchain-core
+langchain_community
